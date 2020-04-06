@@ -1,2 +1,8 @@
-# anvisa_medications
-Api que lista os medicamentos permitidos pela Anvisa 
+# ANVISA medications
+Api that list Labs and medications allowed by ANVISA (http://portal.anvisa.gov.br/)
+
+# Made with
+NodeJS, Express, Knex, Cors, Sqlite 
+
+# Mocha used for tests
+Always do yours unit tests
