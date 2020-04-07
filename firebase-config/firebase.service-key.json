@@ -1,0 +1,12 @@
+{
+	"type": "service_account",
+	"project_id": "medicamentos-15701",
+	"private_key_id": "03312c15451db429c675f8df08971851f8369efc",
+	"private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDjpkHdwcVALdFQ\nL5L7Scs+NcRCLcrep1yWcpxGxfAQzAnI3iNWPs6BWeeAHabfebXT4jgO261bwTH9\nY9qO+4+mqC7FMmRnCf6fbm5iW1fmnKqR+HFJAq0v/cKH8Y71L1a3oFTiYktgydXD\nL37gNQ8kpI8e8ozhGlxwbrUayQO1r7i0s7oNgDyIFQDU6otS1EFFdq1yxrwuevVj\nf7cq2rRWewPBPbZwO1vVIAhapqXJvAhQkpk30eJn+YTtSB89gW0/wgj278om9IOu\nm4UK6GTXdaPATFOALjlNfce8VnlR7cRcS6eaGzYJuJ8/+9iHUc0OAZWPTTmLiv4a\nG9nj6tirAgMBAAECggEAMEzpMrTXNhvCimHdrKVmkwdzYZs3rPATi/Q7RiTfH6E6\n/jxrgPQIepdpr9wauNWpB5C61iQz7wDZq2qRR78GJpUOf1aGyPns5UTX9NRunQZm\nhlwRJS2FM2aC7LcK3uixXHqPKA008w8/5I7iO43mbZ7gou9Rhr1CGbTThiBaQiTk\n71O2AtHmF8dHQk8S0ccOr6Py4LgTLNjLyhOE/cipySkvWWy7bJSS7zOxXRxsABXg\nTiJf3n/cYN3LSMO2XxXUamxOlctI3n3zgxwOmhPM3LK85YG/x5xhkB1woUpEzQ1N\n4klIgi47+mpmxTiHhdphd+AbKTgW93g9JhOsJ8dVyQKBgQD4Tq3uMV+Ig1C7ae0Q\nZy+iAngyrhDj3oyJ53l4h4jsrcbINYMMtysYJvhEEMRGEvE9360ClCoJUFpX354o\nxT9AxatEwFyq5tbCw9W+Fmvgkq6kLh4biUQ5D3QzCO/rWsG+GTjAFyu3la4QvFLc\nMCfw9gnsxJOnGEB1t4z9AQY4NwKBgQDqs72QraR8+gt7m6lqMB1QUooT83lnn0No\n+6QrgPQBB6E96NlDpgbm/KDcjrULedruAprEe+4yhI3sJUQ0Y3NlAudNvSP2/ZCn\ngl+tUy7vcj2Wt8gW6SiJ6HJABEyAdvCdT3rDNy4ym538VzrNfyvvKY6zGIrEz8OW\n+pP6CltBLQKBgQDy4bs+N6tT0+bfO3C4z8YG+dVq9VruGd1sczAdVq33nM/JPJaw\nlGah3FSR97iVNqgktqr7z8QCkkecls6U4MPLbs7llCfQv7Wok3h61GG3LKOJUtb+\nZlmGWvh1hzNvCrpiYTdipgeMLuwx0JRYbv5Ss8fngi1Pj+hVfTJ6tErKJwKBgBTZ\njteRdXFczTRX6b7zM0d1barEEF7yOQzUfgsXU5Xb1akoTFTEJQzUGH4/dznjw10t\ngg4+bDS0rd7ymJKG2zN4BJBVYyKH+BfJbzJ4l0zSO0JuZSoT4HQP4EZrm1g2OL3g\n16kL9+CrDmfiX+jtiTuf13t1jK5bPqbk78xgqyapAoGBAJu+cJ7bRFLHC/9UFQVB\nmrC85cnel6cUv/B3JfaUB/CWLtmAVMcqY0mWsv40inujMoE394ZYTtnZaqqy0UGy\nbb/YGfp7B66coAITeJ9o6hCOwoV2lqyXzhsk+iQaWzqsD6T/99G38L36bZn+qyVS\n3QGW6tGktXvJ5bhuKIak2Mer\n-----END PRIVATE KEY-----\n",
+	"client_email": "firebase-adminsdk-x8y4t@medicamentos-15701.iam.gserviceaccount.com",
+	"client_id": "106718609183372243772",
+	"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+	"token_uri": "https://oauth2.googleapis.com/token",
+	"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+	"client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-x8y4t%40medicamentos-15701.iam.gserviceaccount.com"
+	}
