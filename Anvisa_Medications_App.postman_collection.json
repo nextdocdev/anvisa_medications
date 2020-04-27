@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "f2f46d96-8b86-4e2f-9066-c6e687c05d1f",
+		"name": "Anvisa_Medications App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth - SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"carlos.barata@gmail.com\",\n\t\"password\": \"pass@word1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth - SignOut",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-uid",
+						"value": "95wrX2ppNagPvPAGkzeh3PVXwHA2",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-id",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgzYTczOGUyMWI5MWNlMjRmNDM0ODBmZTZmZWU0MjU4Yzg0ZGI0YzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbWVudG9zLTE1NzAxIiwiYXVkIjoibWVkaWNhbWVudG9zLTE1NzAxIiwiYXV0aF90aW1lIjoxNTg2MTE3Mjc1LCJ1c2VyX2lkIjoiOTV3clgycHBOYWdQdlBBR2t6ZWgzUFZYd0hBMiIsInN1YiI6Ijk1d3JYMnBwTmFnUHZQQUdremVoM1BWWHdIQTIiLCJpYXQiOjE1ODYxMTcyNzYsImV4cCI6MTU4NjEyMDg3NiwiZW1haWwiOiJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.mVZlfA9X5KgJhNmrskk16QrpqFPXUdRHtd5yn9PrdjnyEcMSWIaXSlYA-0n4E5HbPGiNr4fcUrPDhe1eMOZHGW_HHh3PoyefGjrWuuohaw0gU2yoS5W3X1azOEqBqJLW2eCR5Q-aIoXXNI_CDll8xQzbVJWe6tMehg0CcoE0U__l2qIy5TYspusH_j35YgvrfdQSgvu0J1dRsyJMBcmC45VeRkAX8O7a60zcbIkMBzj_rvxaMVlbnTv18jIzftsyL2Ed6VbpMlZCH5A9dSFLEDqOr0vvQZSXyOEX7ilspCzT_vj9kAlBFeq6sPGFYkoLkPuaXiBfpKJFyA-sU1QICQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/auth/signout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Laboratorio - FindByName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-id",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgzYTczOGUyMWI5MWNlMjRmNDM0ODBmZTZmZWU0MjU4Yzg0ZGI0YzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbWVudG9zLTE1NzAxIiwiYXVkIjoibWVkaWNhbWVudG9zLTE1NzAxIiwiYXV0aF90aW1lIjoxNTg2MTE3Mjc1LCJ1c2VyX2lkIjoiOTV3clgycHBOYWdQdlBBR2t6ZWgzUFZYd0hBMiIsInN1YiI6Ijk1d3JYMnBwTmFnUHZQQUdremVoM1BWWHdIQTIiLCJpYXQiOjE1ODYxMTcyNzYsImV4cCI6MTU4NjEyMDg3NiwiZW1haWwiOiJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.mVZlfA9X5KgJhNmrskk16QrpqFPXUdRHtd5yn9PrdjnyEcMSWIaXSlYA-0n4E5HbPGiNr4fcUrPDhe1eMOZHGW_HHh3PoyefGjrWuuohaw0gU2yoS5W3X1azOEqBqJLW2eCR5Q-aIoXXNI_CDll8xQzbVJWe6tMehg0CcoE0U__l2qIy5TYspusH_j35YgvrfdQSgvu0J1dRsyJMBcmC45VeRkAX8O7a60zcbIkMBzj_rvxaMVlbnTv18jIzftsyL2Ed6VbpMlZCH5A9dSFLEDqOr0vvQZSXyOEX7ilspCzT_vj9kAlBFeq6sPGFYkoLkPuaXiBfpKJFyA-sU1QICQ",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-uid",
+						"value": "95wrX2ppNagPvPAGkzeh3PVXwHA2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"ABB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/laboratorio/findByName",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"laboratorio",
+						"findByName"
+					]
+				},
+				"description": "Api para exibir # laboratorios, # medicamentos e as respectivas classificações"
+			},
+			"response": []
+		},
+		{
+			"name": "Laboratorio - ListAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-id",
+						"type": "text",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgzYTczOGUyMWI5MWNlMjRmNDM0ODBmZTZmZWU0MjU4Yzg0ZGI0YzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbWVudG9zLTE1NzAxIiwiYXVkIjoibWVkaWNhbWVudG9zLTE1NzAxIiwiYXV0aF90aW1lIjoxNTg2MTE3Mjc1LCJ1c2VyX2lkIjoiOTV3clgycHBOYWdQdlBBR2t6ZWgzUFZYd0hBMiIsInN1YiI6Ijk1d3JYMnBwTmFnUHZQQUdremVoM1BWWHdIQTIiLCJpYXQiOjE1ODYxMTcyNzYsImV4cCI6MTU4NjEyMDg3NiwiZW1haWwiOiJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.mVZlfA9X5KgJhNmrskk16QrpqFPXUdRHtd5yn9PrdjnyEcMSWIaXSlYA-0n4E5HbPGiNr4fcUrPDhe1eMOZHGW_HHh3PoyefGjrWuuohaw0gU2yoS5W3X1azOEqBqJLW2eCR5Q-aIoXXNI_CDll8xQzbVJWe6tMehg0CcoE0U__l2qIy5TYspusH_j35YgvrfdQSgvu0J1dRsyJMBcmC45VeRkAX8O7a60zcbIkMBzj_rvxaMVlbnTv18jIzftsyL2Ed6VbpMlZCH5A9dSFLEDqOr0vvQZSXyOEX7ilspCzT_vj9kAlBFeq6sPGFYkoLkPuaXiBfpKJFyA-sU1QICQ"
+					},
+					{
+						"key": "x-auth-uid",
+						"value": "95wrX2ppNagPvPAGkzeh3PVXwHA2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"17\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/laboratorio",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"laboratorio"
+					]
+				},
+				"description": "Api para exibir # laboratorios, # medicamentos e as respectivas classificações"
+			},
+			"response": []
+		},
+		{
+			"name": "Laboratorio - FindById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-id",
+						"type": "text",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgzYTczOGUyMWI5MWNlMjRmNDM0ODBmZTZmZWU0MjU4Yzg0ZGI0YzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbWVudG9zLTE1NzAxIiwiYXVkIjoibWVkaWNhbWVudG9zLTE1NzAxIiwiYXV0aF90aW1lIjoxNTg2MTE3Mjc1LCJ1c2VyX2lkIjoiOTV3clgycHBOYWdQdlBBR2t6ZWgzUFZYd0hBMiIsInN1YiI6Ijk1d3JYMnBwTmFnUHZQQUdremVoM1BWWHdIQTIiLCJpYXQiOjE1ODYxMTcyNzYsImV4cCI6MTU4NjEyMDg3NiwiZW1haWwiOiJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.mVZlfA9X5KgJhNmrskk16QrpqFPXUdRHtd5yn9PrdjnyEcMSWIaXSlYA-0n4E5HbPGiNr4fcUrPDhe1eMOZHGW_HHh3PoyefGjrWuuohaw0gU2yoS5W3X1azOEqBqJLW2eCR5Q-aIoXXNI_CDll8xQzbVJWe6tMehg0CcoE0U__l2qIy5TYspusH_j35YgvrfdQSgvu0J1dRsyJMBcmC45VeRkAX8O7a60zcbIkMBzj_rvxaMVlbnTv18jIzftsyL2Ed6VbpMlZCH5A9dSFLEDqOr0vvQZSXyOEX7ilspCzT_vj9kAlBFeq6sPGFYkoLkPuaXiBfpKJFyA-sU1QICQ"
+					},
+					{
+						"key": "x-auth-uid",
+						"value": "95wrX2ppNagPvPAGkzeh3PVXwHA2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"17\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/laboratorio/findById",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"laboratorio",
+						"findById"
+					]
+				},
+				"description": "Api para exibir # laboratorios, # medicamentos e as respectivas classificações"
+			},
+			"response": []
+		},
+		{
+			"name": "Produtos - ListAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-id",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjMGMzNWZlYjBjODIzYjQyNzdkZDBhYjIwNDQzMDY5ZGYzMGZkZWEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbWVudG9zLTE1NzAxIiwiYXVkIjoibWVkaWNhbWVudG9zLTE1NzAxIiwiYXV0aF90aW1lIjoxNTg2MjA2ODc5LCJ1c2VyX2lkIjoiOTV3clgycHBOYWdQdlBBR2t6ZWgzUFZYd0hBMiIsInN1YiI6Ijk1d3JYMnBwTmFnUHZQQUdremVoM1BWWHdIQTIiLCJpYXQiOjE1ODYyMDY4ODAsImV4cCI6MTU4NjIxMDQ4MCwiZW1haWwiOiJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.zju2k7VUue4lg2i-p9UKzAIkb5UHpVvBaXLx2RQ-kBFTxJoO3IGQ2ibNwnbuvS6kP6_wBKfusepe4naxJp8Ck-hDH9IYmT8PYJ87wI9TOp2ghdvq3cZ3r3qfcPC8GdKf2arrz00xVn4prHJh8qbH3XF89EXTn4hnsKFONfR59YyfwHdGLMNXbUeVchVkAP2YqOtvtFL7xOvmRIDYOe1gg2BT0hqV-gLEzkLF_E66cMN-8yo4Hp2iSzn7nEfQIQY1YRpUXQh2f8L-zaSWBynpK080rkM_Vh6Hkunr8aQ2aPEFpF428FP2tCm-3720wLI-i8XalhXbFSU4tmXKpr5tEw",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-uid",
+						"value": "95wrX2ppNagPvPAGkzeh3PVXwHA2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produtos - Substancia",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-id",
+						"type": "text",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgzYTczOGUyMWI5MWNlMjRmNDM0ODBmZTZmZWU0MjU4Yzg0ZGI0YzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbWVudG9zLTE1NzAxIiwiYXVkIjoibWVkaWNhbWVudG9zLTE1NzAxIiwiYXV0aF90aW1lIjoxNTg2MTMxNzk4LCJ1c2VyX2lkIjoiOTV3clgycHBOYWdQdlBBR2t6ZWgzUFZYd0hBMiIsInN1YiI6Ijk1d3JYMnBwTmFnUHZQQUdremVoM1BWWHdIQTIiLCJpYXQiOjE1ODYxMzE3OTksImV4cCI6MTU4NjEzNTM5OSwiZW1haWwiOiJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.dUSb5jdvcEpEuYD8sPHkjjuANHAGlcM4xKdVVng6Wj6xigt6NXKC6lRcXNa33jStfaIbxqFQEGoyc_X3vpIdCBN2k9YW7iBYkRrNrjHEvVLa3zCJn5E74yEhiS1XBQFOVYR63vVu7JDbRORWL9b2qDPlFTQZtgXZftWOS9MYRKXmLqxOqCSiVUESw_2Vvc2iLDJF4A5OgXfVzxAFIWRzLg4bTU6nOriOfMdPUytBC1e67aAq7vExU5X0O5uJXPvO6i2to9JNwnuCHGLDGuMPqWPOELSOtmCTwEX5yZDCegYMBl8wAQmrP18i7qLM9dBwxage4HeAiqLcwNkJlTsp4w"
+					},
+					{
+						"key": "x-auth-uid",
+						"type": "text",
+						"value": "95wrX2ppNagPvPAGkzeh3PVXwHA2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"substancia\" : \"ABATACEPTE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/produto/substancia",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produto",
+						"substancia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produtos - Classe Terapêutica",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-id",
+						"type": "text",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgzYTczOGUyMWI5MWNlMjRmNDM0ODBmZTZmZWU0MjU4Yzg0ZGI0YzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbWVudG9zLTE1NzAxIiwiYXVkIjoibWVkaWNhbWVudG9zLTE1NzAxIiwiYXV0aF90aW1lIjoxNTg2MTM1ODE5LCJ1c2VyX2lkIjoiOTV3clgycHBOYWdQdlBBR2t6ZWgzUFZYd0hBMiIsInN1YiI6Ijk1d3JYMnBwTmFnUHZQQUdremVoM1BWWHdIQTIiLCJpYXQiOjE1ODYxMzU4MjAsImV4cCI6MTU4NjEzOTQyMCwiZW1haWwiOiJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJjYXJsb3MuYmFyYXRhQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.FMpmfMrtHgmvFCAuzQT6E8F0edgSMqaEopTFa2B0_xrt1ehmc5_1nGujvsDdOemUX9AmXs88hcYTMljOd2Z41KvHevs_qadSxbIJT79s1xmtYj_wBB1kzdStG0Sgqoar4mfCd2MjLyuOLBgi1ymuDaHWeEz-6QZVIf9RhN27VuF4hGCRWJkQZo2tT6VYIrBhISGG0oC-l0ao7KLCo51O0iqxbkTpb6y8qZs1NH9A2t1gergb6N47Bb6XnPrhbnpNmvCnaH82jESyPi5PsEsFSztdeuUR09oacvapZpz9Jgijj7ppPWWNNgK8LMW67WAGt9BxtZxdq_jlmDIjhw9LKw"
+					},
+					{
+						"key": "x-auth-uid",
+						"type": "text",
+						"value": "95wrX2ppNagPvPAGkzeh3PVXwHA2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"classeTerapeutica\" : \"M01C0 - AGENTES ANTI-REUMÁTICOS ESPECÍFICOS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/produto/classe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produto",
+						"classe"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
